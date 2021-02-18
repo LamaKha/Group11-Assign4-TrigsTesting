@@ -19,7 +19,9 @@ public class Trigs {
         double newAngle = normalizedRad (angle);
         //factorial function can go up to 170
         //we think that 17 will be enough for this assignment
-        for(int i=1;i<=17;i++)
+        //by TDD testing we discovered that the upper boundary for this function is 12
+        //then we changed the number from 17 to 12
+        for(int i=1;i<=12;i++)
         {
             sin = sin + (power(-1, i-1)*
                     power(newAngle, (2*i)-1)/factorial((2*i)-1));
@@ -38,7 +40,9 @@ public class Trigs {
         double newAngle = normalizedRad (angle);
         //factorial function can go up to 170
         //we think that 17 will be enough for this assignment
-        for(int i=1;i<=17;i++)
+        //by TDD testing we discovered that the upper boundary for this function is 12
+        //then we changed the number from 17 to 12
+        for(int i=1;i<=12;i++)
         {
             cos = cos + (power(-1, i-1)*
                     power(newAngle, 2*(i-1))/factorial(2*(i-1)));
