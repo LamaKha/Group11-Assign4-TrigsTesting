@@ -2,7 +2,7 @@
  *@author Group11
  * Course: COMP-4110
  * Purpose: Assignment 4 - Trigonometric Functions using Taylor series - Junit Testing
- * @version version 2.0 (code skeleton)
+ * @version version 3.0
  * Due Date: February 23, 2021
  */
 import org.junit.jupiter.api.Test;
