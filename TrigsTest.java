@@ -118,10 +118,12 @@ class TrigsTest {
     }
 
 
+
     @Test
     void factorial() {
         fail("Code is not implemented yet");
         //Testing Boundaries
+        assertEquals(720, Trigs.factorial(6));
 
         //Testing Equivalence Partitions
 
@@ -130,10 +132,9 @@ class TrigsTest {
 
     @Test
     void power() {
-        fail("Code is not implemented yet");
 
         //Testing Boundaries
-
+        assertEquals(Trigs.power(4, 0), Math.pow(4, 0));
         //Testing Equivalence Partitions
 
         //Testing Educated Guesses
