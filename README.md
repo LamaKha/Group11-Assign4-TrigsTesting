@@ -1,4 +1,5 @@
-# Group11-Assign4-JUnit Testing of Trigonometric Functions
+# Group11Assign4
+JUnit Testing of Trigonometric Functions
 In this assignment we will teste and implement some trigonometric functions using Junit and following the TDD approach.
 
 # Functions Being Tested
