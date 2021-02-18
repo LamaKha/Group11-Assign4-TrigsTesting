@@ -144,4 +144,14 @@ class TrigsTest {
 
         //Testing Educated Guesses
     }
+
+    @Test
+    void power2() {
+        //test case made by Faraz for github testing!!
+        //Testing Boundaries
+        assertEquals(Trigs.power(4, 0), Math.pow(4, 0));
+        //Testing Equivalence Partitions
+
+        //Testing Educated Guesses
+    }
 }
