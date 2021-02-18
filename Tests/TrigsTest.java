@@ -18,7 +18,7 @@ class TrigsTest {
         //Testing for angle zero
         assertEquals(Trigs.sin(0), Math.sin(0),decimalPlaces);
         //testing for angle PI
-        //assertEquals(Trigs.sin(3.141), Math.sin(3.141),decimalPlaces); //testing for PI failed
+        assertEquals(Trigs.sin(3.141), Math.sin(3.141),decimalPlaces);
         //Testing for Turn
         assertEquals(Trigs.sin(360), Math.sin(360),decimalPlaces);
 
@@ -27,9 +27,9 @@ class TrigsTest {
         //First Quadrant Partition
         assertEquals(Trigs.sin(45.558), Math.sin(45.558),decimalPlaces);
         //Second Quadrant Partition
-        //assertEquals(Trigs.sin(135.847), Math.sin(135.847),decimalPlaces); //Q2 test failed
+        assertEquals(Trigs.sin(135.847), Math.sin(135.847),decimalPlaces);
         //Third Quadrant Partition
-        //assertEquals(Trigs.sin(255.789), Math.sin(255.789),decimalPlaces); //Q3 test failed
+        assertEquals(Trigs.sin(255.789), Math.sin(255.789),decimalPlaces);
         //Fourth Quadrant Partition
         assertEquals(Trigs.sin(315.659), Math.sin(315.659),decimalPlaces);
 
@@ -47,7 +47,7 @@ class TrigsTest {
         //Testing for angle zero
         assertEquals(Trigs.cos(0), Math.cos(0),decimalPlaces);
         //testing for angle PI
-        //assertEquals(Trigs.cos(3.141592), Math.cos(3.141592),decimalPlaces); //testing for PI failed
+        assertEquals(Trigs.cos(3.141592), Math.cos(3.141592),decimalPlaces);
         //Testing for Turn
         assertEquals(Trigs.cos(360), Math.cos(360),decimalPlaces);
 
@@ -56,9 +56,9 @@ class TrigsTest {
         //First Quadrant Partition
         assertEquals(Trigs.cos(45.558), Math.cos(45.558),decimalPlaces);
         //Second Quadrant Partition
-        //assertEquals(Trigs.cos(135.847), Math.cos(135.847),decimalPlaces); //Q2 test failed
+        assertEquals(Trigs.cos(135.847), Math.cos(135.847),decimalPlaces);
         //Third Quadrant Partition
-        //assertEquals(Trigs.cos(255.789), Math.cos(255.789),decimalPlaces); //Q4 test failed
+        assertEquals(Trigs.cos(255.789), Math.cos(255.789),decimalPlaces);
         //Fourth Quadrant Partition
         assertEquals(Trigs.cos(315.65969), Math.cos(315.65969),decimalPlaces);
 
@@ -76,7 +76,7 @@ class TrigsTest {
         //Testing for angle zero
         assertEquals(Trigs.tan(0), Math.tan(0),decimalPlaces);
         //testing for angle PI
-        //assertEquals(Trigs.tan(3.141592), Math.tan(3.141592),decimalPlaces); //testing for PI failed
+        assertEquals(Trigs.tan(3.141592), Math.tan(3.141592),decimalPlaces);
         //Testing for Turn
         assertEquals(Trigs.tan(360), Math.tan(360),decimalPlaces);
 
@@ -123,7 +123,7 @@ class TrigsTest {
         //Testing Boundaries
         assertEquals(1, Trigs.factorial(0));
         assertEquals(720, Trigs.factorial(6));
-        assertEquals(479001600, Trigs.factorial(12));//the Boundary
+        assertEquals(479001600, Trigs.factorial(12));//the upper Boundary
         //assertEquals(6227020800, Trigs.factorial(13));//Test failed number is too large
         //assertEquals(87178291200, Trigs.factorial(14)); //Test failed number is too large
 
