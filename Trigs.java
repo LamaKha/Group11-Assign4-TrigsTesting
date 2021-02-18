@@ -16,8 +16,14 @@ public class Trigs {
     public static double sin(double angle)
     {
         double sin=0;
-
-
+        double newAngle = normalizedRad (angle);
+        //factorial function can go up to 170
+        //we think that 17 will be enough for this assignment
+        for(int i=1;i<=17;i++)
+        {
+            sin = sin + (power(-1, i-1)*
+                    power(newAngle, (2*i)-1)/factorial((2*i)-1));
+        }
         return sin;
     }
 
@@ -29,6 +35,15 @@ public class Trigs {
     public static double cos(double angle)
     {
         double cos=0;
+        double newAngle = normalizedRad (angle);
+        //factorial function can go up to 170
+        //we think that 17 will be enough for this assignment
+        for(int i=1;i<=17;i++)
+        {
+            cos = cos + (power(-1, i-1)*
+                    power(newAngle, 2*(i-1))/factorial(2*(i-1)));
+        }
+
         return cos;
     }
 
@@ -40,6 +55,7 @@ public class Trigs {
     public static double tan(double angle)
     {
         double tan=0;
+        tan = sin(angle) / cos (angle);
         return tan;
     }
 
@@ -51,7 +67,9 @@ public class Trigs {
 
     public static double DegToRad (double x)
     {
-        return x ;
+        double PI = 3.141592; //PI value
+        double Turn = 360;  //full cycle
+        return (2* x * PI)/ Turn ;
     }
 
     /*
@@ -61,8 +79,8 @@ public class Trigs {
      */
 
     public static double normalizedRad (double x)
-    {
-        return x;
+    {   double PI = 3.141592; //PI value
+        return x % (PI*2);
     }
 
     /*
@@ -70,7 +88,7 @@ public class Trigs {
      * Input: n (any value)
      * Return: returns normalized radian
      */
-    public static long factorial(int n)
+    public static long factorial (int n)
     {
         if (n == 0)
             return 1;
