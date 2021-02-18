@@ -99,7 +99,8 @@ class TrigsTest {
 
     @Test
     void degToRad() {
-        fail("Code is not implemented yet");
+        double PI = 3.141592; //PI value
+        assertEquals(Trigs.DegToRad(180), PI);
         //Testing Boundaries
 
         //Testing Equivalence Partitions
