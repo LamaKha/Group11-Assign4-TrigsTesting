@@ -110,9 +110,12 @@ public class Trigs {
 
         if(p == 0)
             return result;
-
-        for(int i=1; i<=p; i++)
-            result = result * b;
+        else if ( p > 0)
+            for(int i=1; i<=p; i++)
+                result = result * b;
+        else
+            for(int i=-1; i>=p; i--)
+                result = result / b;
 
         return result;
 
