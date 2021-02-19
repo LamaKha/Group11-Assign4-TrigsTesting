@@ -100,12 +100,21 @@ class TrigsTest {
     @Test
     void degToRad() {
         double PI = 3.141592; //PI value
-        assertEquals(Trigs.DegToRad(180), PI);
+
         //Testing Boundaries
-
+        assertEquals(Trigs.DegToRad(180), PI, decimalPlaces);
+        assertEquals(Trigs.DegToRad(270), (3*PI)/2, decimalPlaces);
+        assertEquals(Trigs.DegToRad(90), PI/2, decimalPlaces);
+        assertEquals(Trigs.DegToRad(360), (2*PI), decimalPlaces);
         //Testing Equivalence Partitions
-
-        //Testing Educated Guesses
+        //q1
+        assertEquals(Trigs.DegToRad(45), PI/4, decimalPlaces);
+        //q2
+        assertEquals(Trigs.DegToRad(150), 5*PI/6, decimalPlaces);
+        //q3
+        assertEquals(Trigs.DegToRad(240), 8*PI/6, decimalPlaces);
+        //q4
+        assertEquals(Trigs.DegToRad(330), 11*PI/6, decimalPlaces);
     }
 
     @Test
