@@ -150,9 +150,17 @@ class TrigsTest {
 
         //Testing Boundaries
         assertEquals(Trigs.power(4, 0), Math.pow(4, 0));
+
         //Testing Equivalence Partitions
+        assertEquals(Trigs.power(3, 3), 27);
+        assertEquals(Trigs.power(2, 4), 16);
+        assertEquals(Trigs.power(6, 3), 216);
+        assertEquals(Trigs.power(12, 3), 1728);
 
         //Testing Educated Guesses
+        assertEquals(Trigs.power(4, -1), 0.25);
+        assertEquals(Trigs.power(-4, 2), 16);
+        assertEquals(Trigs.power(-1, -1), -1);
     }
 
     @Test
