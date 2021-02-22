@@ -72,16 +72,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TrigsTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TrigsTest.tan">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TrigsTest" />
         <item itemvalue="JUnit.TrigsTest.tan" />
+        <item itemvalue="JUnit.TrigsTest" />
         <item itemvalue="JUnit.TrigsTest.cos" />
         <item itemvalue="JUnit.TrigsTest.sin" />
         <item itemvalue="JUnit.TrigsTest.factorial" />
@@ -158,6 +156,7 @@
       <updated>1613583489511</updated>
       <workItem from="1613583491099" duration="27645000" />
       <workItem from="1613678751930" duration="305000" />
+      <workItem from="1614014197942" duration="945000" />
     </task>
     <servers />
   </component>
@@ -175,6 +174,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed the issue with tan() Equivalence Partitions by limiting decimal points to one or two places, as Dr. Kobti recommended." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the issue with tan() Equivalence Partitions by limiting decimal points to one or two places, as Dr. Kobti recommended." />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1613584568275">
@@ -197,22 +200,22 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="3104" y="242" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613589018892" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1613679058553">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1614015118381">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613679058553" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1613679058552">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614015118381" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1614015118381">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613679058552" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1613679058552">
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614015118381" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1614015118381">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613679058552" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1613679058552">
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614015118381" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1614015118381">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613679058552" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614015118381" />
     <state x="2691" y="72" key="SettingsEditor" timestamp="1613604076559">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -231,21 +234,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Trigs.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Tests/TrigsTest.java</url>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Tests/TrigsTest.java</url>
-          <line>71</line>
-          <properties class="TrigsTest" method="tan">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

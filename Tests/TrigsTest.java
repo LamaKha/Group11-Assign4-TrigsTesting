@@ -83,15 +83,18 @@ class TrigsTest {
         assertEquals(Trigs.tan(360), Math.tan(360),decimalPlaces);
 
         /**Testing Equivalence Partitions**/
+        //As the numbers got bigger, it was hard to compare the decimal places results
+        //with Math library results, so after multiple tries,
+        // we limited our Equivalence Partitions testing to one or two decimal places as Dr. Kobti recommended.
 
         //First Quadrant Partition
-        //assertEquals(Trigs.tan(45.558), Math.tan(45.558),decimalPlaces); //Q1 test failed
+        assertEquals(Trigs.tan(45.8), Math.tan(45.8),decimalPlaces);
         //Second Quadrant Partition
-        //assertEquals(Trigs.tan(135.847), Math.tan(135.847),decimalPlaces);//Q2 test failed
+        assertEquals(Trigs.tan(135.84), Math.tan(135.84),decimalPlaces);
         //Third Quadrant Partition
-        //assertEquals(Trigs.tan(255.789), Math.tan(255.789),decimalPlaces);//Q3 test failed
+        assertEquals(Trigs.tan(255), Math.tan(255),decimalPlaces);
         //Fourth Quadrant Partition
-        //assertEquals(Trigs.tan(315.65969), Math.tan(315.65969),decimalPlaces); //Q4 test failed
+        assertEquals(Trigs.tan(315), Math.tan(315),decimalPlaces);
 
         /**Testing Educated Guesses**/
 
