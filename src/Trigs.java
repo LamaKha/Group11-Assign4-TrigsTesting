@@ -10,26 +10,7 @@ import java.util.Scanner;
 
 public class Trigs {
 
-    /**
-     * This is the main function
-     */
-    public static void main(String[] args) {
-        Trigs t=new Trigs();
-        double v;
-        v=t.sin(1.5708);
-        System.out.println(v);
-        v=t.cos(1.5708);
-        System.out.println(v);
-        v=t.tan(1.5708);
-        System.out.println(v);
-        System.out.println("now in degrees");
-        v=t.sind(90);
-        System.out.println(v);
-        v=t.cosd(90);
-        System.out.println(v);
-        v=t.tand(90);
-        System.out.println(v);
-    }
+
 
     /**
      * This method calculates sin(x) using degrees
