@@ -131,12 +131,10 @@ void degToRad() {
 
     @Test
     void normalizedRad() {
-       // fail("Code is not implemented yet");
-        //Testing Boundaries
-
-        //Testing Equivalence Partitions
-
-        //Testing Educated Guesses
+        double PI = Math.PI;
+        for (int i = 0; i <= 3; i++){
+           assertEquals(Trigs.normalizedRad((PI/2)*i), Math.toRadians(90)*i);
+       }
     }
 
 
