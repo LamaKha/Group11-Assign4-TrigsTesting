@@ -119,11 +119,11 @@ void degToRad() {
 }
 
     @ParameterizedTest
-    @ValueSource(doubles = {30,45,50.5,60,65,75,90,95,100,130,160,180,190,220,270,280,300,360})
+    @ValueSource(doubles = {30,45,50.5,60,65,75,90,95,100,130,160,180,190,220,270,280,300,350,360})
     void degToRadT(double angle) {
 
         //Testing for radian values
-        assertEquals(Trigs.DegToRad(angle),Math.toRadians(angle));
+        assertEquals(Trigs.DegToRad(angle),Math.toRadians(angle),5);
     }
 
     @Test
