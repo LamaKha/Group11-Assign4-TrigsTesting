@@ -6,6 +6,8 @@
  * Due Date: February 23, 2021
  */
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -97,25 +99,24 @@ class TrigsTest {
         assertEquals(Trigs.tan(-1), Math.tan(-1),decimalPlaces);
     }
 
-    @Test
-    void degToRad() {
-        fail("Code is not implemented yet");
-        //Testing Boundaries
+    @ParameterizedTest
+    @ValueSource(doubles = {30,45,50.5,60,65,75,90,95,100,130,160,180,190,220,270,280,300,360})
+    void degToRadT(double angle) {
 
-        //Testing Equivalence Partitions
-
-        //Testing Educated Guesses
+        //Testing for radian values
+        assertEquals(Trigs.DegToRad(angle),Math.toRadians(angle));
     }
 
     @Test
     void normalizedRad() {
-        fail("Code is not implemented yet");
+       // fail("Code is not implemented yet");
         //Testing Boundaries
 
         //Testing Equivalence Partitions
 
         //Testing Educated Guesses
     }
+
 
     @Test
     void factorial() {
