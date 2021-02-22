@@ -59,7 +59,8 @@ public class Trigs {
     public static double tan(double angle)
     {
         double tan=0;
-        tan = sin(angle) / cos (angle);
+        double x, y;
+        x = sin(angle) / cos(angle);
         return tan;
     }
 
