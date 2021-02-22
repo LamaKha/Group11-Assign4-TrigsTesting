@@ -6,6 +6,7 @@
  * Due Date: February 23, 2021
  */
 
+import javax.print.attribute.standard.NumberUpSupported;
 import java.util.Scanner;
 
 public class Trigs {
@@ -101,6 +102,9 @@ public class Trigs {
      */
     public static double tand(double angle)
     {
+        if(angle==90){
+            return Double.NaN;
+        }
         double val=DegToRad(angle);
         double ret=tan(val);
 
