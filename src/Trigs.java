@@ -152,14 +152,15 @@ public class Trigs {
     public static double power(double b, int p)
     {
         double result=1;
-
-        if(p == 0)
-            return result;
-
+    if(p == 0)
+        return result;
+    else if ( p > 0)
         for(int i=1; i<=p; i++)
             result = result * b;
-
-        return result;
+    else
+        for(int i=-1; i>=p; i--)
+            result = result / b;
+    return result;
 
     }
 }
