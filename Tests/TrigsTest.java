@@ -146,7 +146,13 @@ void degToRad() {
         assertEquals(Trigs.normalizedRad(5*PI), PI,4 );
         assertEquals(Trigs.normalizedRad(11*PI/2), 3*PI/2,4 );
         assertEquals(Trigs.normalizedRad(6*PI), 0,4 );
-
+        //Equivalence Partitioning
+        assertEquals(Trigs.normalizedRad(25*PI/9), 7*PI/9,4 );
+        assertEquals(Trigs.normalizedRad(40*PI/9), 4*PI/9,4 );
+        assertEquals(Trigs.normalizedRad(64*PI/9), 10*PI/9 ,4);
+        assertEquals(Trigs.normalizedRad(349*PI/36), 61*PI/36,4 );
+        assertEquals(Trigs.normalizedRad(229*PI/20), 29*PI/20 ,4);
+        assertEquals(Trigs.normalizedRad(541*PI/45), PI/45,4 );
 
 
     }
