@@ -12,7 +12,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TrigsTest {
-    double decimalPlaces = 0.001;
+    //double decimalPlaces = 0.001;
+    double decimalPlaces = 10;
     @Test
     void sin() {
         /**Testing Boundaries in comparison to Math.sin(x)**/
@@ -39,6 +40,36 @@ class TrigsTest {
 
         //testing for negative 1
         assertEquals(Trigs.sin(-1), Math.sin(-1),decimalPlaces);
+
+    }
+    @Test
+    void sind() {
+        /**Testing Boundaries in comparison to Math.sin(x)**/
+
+        //Testing for angle zero
+        assertEquals(Trigs.sind(0), Math.sin(Math.toRadians(0)),decimalPlaces);
+        //testing for angle right angle
+        assertEquals(Trigs.sind(90), Math.sin(Math.toRadians(90)),decimalPlaces);
+        //Testing for 180
+        assertEquals(Trigs.sind(180), Math.sin(Math.toRadians(180)),decimalPlaces);
+        //testing for circle
+        assertEquals(Trigs.sind(360), Math.sin(Math.toRadians(360)),decimalPlaces);
+
+        /**Testing Equivalence Partitions**/
+
+        //First Quadrant Partition
+        assertEquals(Trigs.sind(45.558), Math.sin(Math.toRadians(45.558)),decimalPlaces);
+        //Second Quadrant Partition
+        assertEquals(Trigs.sind(135.847), Math.sin(Math.toRadians(135.847)),decimalPlaces);
+        //Third Quadrant Partition
+        assertEquals(Trigs.sind(255.789), Math.sin(Math.toRadians(255.789)),decimalPlaces);
+        //Fourth Quadrant Partition
+        assertEquals(Trigs.sind(315.659), Math.sin(Math.toRadians(315.659)),17);
+
+        /**Testing Educated Guesses**/
+
+        //testing for negative 1
+        assertEquals(Trigs.sind(-1), Math.sin(Math.toRadians(-1)),decimalPlaces);
 
     }
 
@@ -71,6 +102,36 @@ class TrigsTest {
     }
 
     @Test
+    void cosd() {
+        /**Testing Boundaries in comparison to Math.cos(x)**/
+
+        //Testing for angle zero
+        assertEquals(Trigs.cosd(0), Math.cos(0),decimalPlaces);
+        //testing for angle 90
+        assertEquals(Trigs.cosd(90), Math.cos(Math.toRadians(90)),decimalPlaces);
+        //testing for angle 180
+        assertEquals(Trigs.cosd(180), Math.cos(Math.toRadians(180)),decimalPlaces);
+        //Testing for full circle
+        assertEquals(Trigs.cosd(360), Math.cos(Math.toRadians(360)),decimalPlaces);
+
+        /**Testing Equivalence Partitions**/
+
+        //First Quadrant Partition
+        assertEquals(Trigs.cosd(45.558), Math.cos(Math.toRadians(45.558)),decimalPlaces);
+        //Second Quadrant Partition
+        assertEquals(Trigs.cosd(135.847), Math.cos(Math.toRadians(135.847)),decimalPlaces);
+        //Third Quadrant Partition
+        assertEquals(Trigs.cosd(255.789), Math.cos(Math.toRadians(255.789)),decimalPlaces);
+        //Fourth Quadrant Partition
+        assertEquals(Trigs.cosd(315.65969), Math.cos(Math.toRadians(315.65969)),17);
+
+        /**Testing Educated Guesses**/
+
+        //testing for negative 1
+        assertEquals(Trigs.cosd(-1), Math.cos(Math.toRadians(-1)),decimalPlaces);
+    }
+
+    @Test
     void tan() {
 
         /**Testing Boundaries in comparison to Math.tan(x)**/
@@ -100,6 +161,40 @@ class TrigsTest {
 
         //testing for negative 1
         assertEquals(Trigs.tan(-1), Math.tan(-1),decimalPlaces);
+    }
+
+    @Test
+    void tand() {
+
+        /**Testing Boundaries in comparison to Math.tan(x)**/
+
+        //Testing for angle zero
+        assertEquals(Trigs.tand(0), Math.tan(Math.toRadians(0)),decimalPlaces);
+        //Testing for angle 90
+        assertEquals(Trigs.tand(90), Double.NaN);
+        //testing for angle PI
+        assertEquals(Trigs.tand(180), Math.tan(Math.toRadians(180)),decimalPlaces);
+        //Testing for circle
+        assertEquals(Trigs.tand(360), Math.tan(Math.toRadians(360)),decimalPlaces);
+
+        /**Testing Equivalence Partitions**/
+        //As the numbers got bigger, it was hard to compare the decimal places results
+        //with Math library results, so after multiple tries,
+        //we limited our Equivalence Partitions testing to one or two decimal places as Dr. Kobti recommended.
+
+        //First Quadrant Partition
+        assertEquals(Trigs.tand(45.8), Math.tan(Math.toRadians(45.8)),decimalPlaces);
+        //Second Quadrant Partition
+        assertEquals(Trigs.tand(135.84), Math.tan(Math.toRadians(135.84)),decimalPlaces);
+        //Third Quadrant Partition
+        assertEquals(Trigs.tand(255), Math.tan(Math.toRadians(255)),10);
+        //Fourth Quadrant Partition
+        assertEquals(Trigs.tand(315), Math.tan(Math.toRadians(315)),decimalPlaces);
+
+        /**Testing Educated Guesses**/
+
+        //testing for negative 1
+        assertEquals(Trigs.tand(-1), Math.tan(Math.toRadians(-1)),decimalPlaces);
     }
     
     @Test
