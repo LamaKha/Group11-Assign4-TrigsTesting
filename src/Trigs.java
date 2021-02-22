@@ -91,6 +91,9 @@ public class Trigs {
     public static double tan(double angle)
     {
         double tan=0;
+        if (angle == Math.PI/2){
+            return Double.NaN;
+        }
         tan = sin(angle) / cos (angle);
         return tan;
     }
