@@ -13,7 +13,7 @@ public class Trigs {
 
 
     /**
-     * This method calculates sin(x) using degrees
+     * This method calculates sin(x)
      * Input: angle value
      * Return: sin value of x
      */
@@ -23,9 +23,9 @@ public class Trigs {
         double sin=0;
         double newAngle = normalizedRad (angle);
         //factorial function can go up to 170
-//we think that 17 will be enough for this assignment
-//by TDD testing we discovered that the upper boundary for this function is 12
-//then we changed the number from 17 to 12
+        //we think that 17 will be enough for this assignment
+        //by TDD testing we discovered that the upper boundary for this function is 12
+        //then we changed the number from 17 to 12
         for(int i=1;i<=12;i++)
         {
             sin = sin + (power(-1, i-1)*power(newAngle, (2*i)-1)/factorial((2*i)-1));
@@ -115,7 +115,8 @@ public class Trigs {
 
     public static double DegToRad (double x)
     {
-        double PI = 3.141592; //PI value
+        //double PI = 3.141592; //PI value
+        double PI=Math.PI;
         double Turn = 360;  //full cycle
         return (2* x * PI)/ Turn ;
     }
