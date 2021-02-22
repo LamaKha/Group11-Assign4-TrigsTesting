@@ -13,7 +13,7 @@ public class Trigs {
 
 
     /**
-     * This method calculates sin(x) using degrees
+     * This method calculates sin(x) 
      * Input: angle value
      * Return: sin value of x
      */
