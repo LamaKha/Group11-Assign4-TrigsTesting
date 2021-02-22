@@ -115,7 +115,6 @@ public class Trigs {
 
     public static double DegToRad (double x)
     {
-        //double PI = 3.141592; //PI value
         double PI=Math.PI;
         double Turn = 360;  //full cycle
         return (2* x * PI)/ Turn ;
@@ -128,7 +127,7 @@ public class Trigs {
      */
 
     public static double normalizedRad (double x)
-    {   double PI = 3.141592; //PI value
+    {   double PI = Math.PI; //PI value
         return x % (PI*2);
     }
 
