@@ -132,9 +132,16 @@ void degToRad() {
     @Test
     void normalizedRad() {
         double PI = Math.PI;
-        for (int i = 0; i <= 3; i++){
-           assertEquals(Trigs.normalizedRad((PI/2)*i), Math.toRadians(90)*i);
-       }
+        //Boundary Testing
+        assertEquals(Trigs.normalizedRad(0), 0 );
+        assertEquals(Trigs.normalizedRad(PI/2), PI/2 );
+        assertEquals(Trigs.normalizedRad(PI), PI );
+        assertEquals(Trigs.normalizedRad(540), PI/2 );
+        assertEquals(Trigs.normalizedRad(180), PI );
+        assertEquals(Trigs.normalizedRad(810), PI/2 );
+        assertEquals(Trigs.normalizedRad(900), PI );
+
+
     }
 
 
