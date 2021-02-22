@@ -85,7 +85,7 @@ class TrigsTest {
         /**Testing Equivalence Partitions**/
         //As the numbers got bigger, it was hard to compare the decimal places results
         //with Math library results, so after multiple tries,
-        // we limited our Equivalence Partitions testing to one or two decimal places as Dr. Kobti recommended.
+        //we limited our Equivalence Partitions testing to one or two decimal places as Dr. Kobti recommended.
 
         //First Quadrant Partition
         assertEquals(Trigs.tan(45.8), Math.tan(45.8),decimalPlaces);
