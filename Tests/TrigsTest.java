@@ -140,6 +140,8 @@ class TrigsTest {
         assertEquals(Trigs.tan(0), Math.tan(0),decimalPlaces);
         //testing for angle PI
         assertEquals(Trigs.tan(3.141592), Math.tan(3.141592),decimalPlaces);
+        //testing pi/2
+        assertEquals(Trigs.tan(Math.PI/2), Double.NaN);
         //Testing for Turn
         assertEquals(Trigs.tan(360), Math.tan(360),decimalPlaces);
 
