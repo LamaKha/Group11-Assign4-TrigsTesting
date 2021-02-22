@@ -10,28 +10,29 @@ import java.util.Scanner;
 
 public class Trigs {
 
+
+
     /**
-     * This is the main function
+     * This method calculates sin(x) using degrees
+     * Input: angle value
+     * Return: sin value of x
      */
-    public static void main(String[] args) {
-        Trigs t=new Trigs();
-        double v;
-        v=t.sin(1.5708);
-        System.out.println(v);
-        v=t.cos(1.5708);
-        System.out.println(v);
-        v=t.tan(1.5708);
-        System.out.println(v);
-        System.out.println("now in degrees");
-        v=t.sind(90);
-        System.out.println(v);
-        v=t.cosd(90);
-        System.out.println(v);
-        v=t.tand(90);
-        System.out.println(v);
+
+    public static double sin(double angle)
+    {
+        double sin=0;
+        double newAngle = normalizedRad (angle);
+        //factorial function can go up to 170
+//we think that 17 will be enough for this assignment
+//by TDD testing we discovered that the upper boundary for this function is 12
+//then we changed the number from 17 to 12
+        for(int i=1;i<=12;i++)
+        {
+            sin = sin + (power(-1, i-1)*power(newAngle, (2*i)-1)/factorial((2*i)-1));
+        }
+
+        return sin;
     }
-
-
 
     /**
      * This method calculates sin(x) using degrees
