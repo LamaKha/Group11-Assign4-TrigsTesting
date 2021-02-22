@@ -133,13 +133,20 @@ void degToRad() {
     void normalizedRad() {
         double PI = Math.PI;
         //Boundary Testing
-        assertEquals(Trigs.normalizedRad(0), 0 );
-        assertEquals(Trigs.normalizedRad(PI/2), PI/2 );
-        assertEquals(Trigs.normalizedRad(PI), PI );
-        assertEquals(Trigs.normalizedRad(540), PI/2 );
-        assertEquals(Trigs.normalizedRad(180), PI );
-        assertEquals(Trigs.normalizedRad(810), PI/2 );
-        assertEquals(Trigs.normalizedRad(900), PI );
+        assertEquals(Trigs.normalizedRad(0), 0,4 );
+        assertEquals(Trigs.normalizedRad(PI/2), PI/2,4 );
+        assertEquals(Trigs.normalizedRad(PI), PI ,4);
+        assertEquals(Trigs.normalizedRad(3*PI/2), 3*PI/2,4 );
+        assertEquals(Trigs.normalizedRad(2*PI), 0 ,4);
+        assertEquals(Trigs.normalizedRad(5*PI/2), PI/2,4 );
+        assertEquals(Trigs.normalizedRad(3*PI), PI,4 );
+        assertEquals(Trigs.normalizedRad(7*PI/2), 3*PI/2,4 );
+        assertEquals(Trigs.normalizedRad(4*PI), 0,4 );
+        assertEquals(Trigs.normalizedRad(9*PI/2), PI/2,4 );
+        assertEquals(Trigs.normalizedRad(5*PI), PI,4 );
+        assertEquals(Trigs.normalizedRad(11*PI/2), 3*PI/2,4 );
+        assertEquals(Trigs.normalizedRad(6*PI), 0,4 );
+
 
 
     }
