@@ -2,7 +2,7 @@
  *@author Group11
  * Course: COMP-4110
  * Purpose: Assignment 4 - Trigonometric Functions using Taylor series - Code
- * @version version 6.0
+ * @version version 7.0 (final)
  * Due Date: February 23, 2021
  */
 
