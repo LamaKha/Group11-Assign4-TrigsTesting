@@ -72,6 +72,13 @@ class TrigsTest {
         assertEquals(Trigs.sind(-1), Math.sin(Math.toRadians(-1)),decimalPlaces);
 
     }
+    @Test
+    void sinT() {
+        //Testing for angle negative turn
+        assertEquals(Trigs.sin(-360), Math.sin(-360),decimalPlaces);
+        //Testing for angle negative PI
+        assertEquals(Trigs.sin(-3.141), Math.sin(-3.141),decimalPlaces);
+    }
 
     @Test
     void cos() {
@@ -129,6 +136,13 @@ class TrigsTest {
 
         //testing for negative 1
         assertEquals(Trigs.cosd(-1), Math.cos(Math.toRadians(-1)),decimalPlaces);
+    }
+    @Test
+    void cosT() {
+        //Testing for negative PI
+        assertEquals(Trigs.cos(-3.141592), Math.cos(-3.141592),decimalPlaces);
+        //Testing for negative turn
+        assertEquals(Trigs.cos(-360), Math.cos(-360), decimalPlaces);
     }
 
     @Test
@@ -197,6 +211,13 @@ class TrigsTest {
 
         //testing for negative 1
         assertEquals(Trigs.tand(-1), Math.tan(Math.toRadians(-1)),decimalPlaces);
+    }
+    @Test
+    void tanT() {
+        //Testing for negative turn
+        assertEquals(Trigs.tan(-360), Math.tan(-360),decimalPlaces);
+        //Testing for negative PI
+        assertEquals(Trigs.tan(-3.141592), Math.tan(-3.141592),decimalPlaces);
     }
     
     @Test
