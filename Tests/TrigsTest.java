@@ -106,6 +106,7 @@ class TrigsTest {
 
         //testing for negative 1
         assertEquals(Trigs.cos(-1), Math.cos(-1),decimalPlaces);
+
     }
 
     @Test
@@ -136,6 +137,7 @@ class TrigsTest {
 
         //testing for negative 1
         assertEquals(Trigs.cosd(-1), Math.cos(Math.toRadians(-1)),decimalPlaces);
+
     }
     @Test
     void cosT() {
@@ -279,6 +281,7 @@ void degToRad() {
     @Test
     void factorial() {
         //fail("Code is not implemented yet");
+
         //Testing Boundaries
         assertEquals(1, Trigs.factorial(0));
         assertEquals(720, Trigs.factorial(6));
@@ -286,12 +289,14 @@ void degToRad() {
         //assertEquals(6227020800, Trigs.factorial(13));//Test failed number is too large
         //assertEquals(87178291200, Trigs.factorial(14)); //Test failed number is too large
 
-        assertEquals(720, Trigs.factorial(6));
-        //Testing Equivalence Partitions
-
+        //Testing Equivalence Partitions between 1 and 12
+        assertEquals(1, Trigs.factorial(1));
+        assertEquals(6, Trigs.factorial(3));
+        assertEquals(5040, Trigs.factorial(7));
+        assertEquals(39916800, Trigs.factorial(11));
 
         //Testing Educated Guesses
-        //assertEquals(-720, Trigs.factorial(-6)); //negative numbers test failed
+        //assertEquals(-1, Trigs.factorial(-1)); //negative numbers test failed
     }
 
     @Test
@@ -315,8 +320,6 @@ void degToRad() {
         //test case made by Faraz for github testing!!
         //Testing Boundaries
         assertEquals(Trigs.power(4, 0), Math.pow(4, 0));
-        //Testing Equivalence Partitions
 
-        //Testing Educated Guesses
     }
 }
