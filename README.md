@@ -17,7 +17,7 @@ Since it is not possible to test every possible input, we are going to use the f
 2. Testing Equivalence Partitions.
 3. Testing Educational Guesses.
 
-#Process of commiting and pushing to github (Terminal version or CMD)
+# Process of commiting and pushing to github (Terminal version or CMD)
 1. git clone https://github.com/LamaKha/Group11-Assign4-TrigsTesting.git
 2. cd Group11-Assign4-TrigsTesting/
 3. git branch       (this will show you your current brances if any or just give out "Master" as branch name)
