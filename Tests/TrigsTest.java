@@ -317,9 +317,11 @@ void degToRad() {
 
     @Test
     void power2() {
-        //test case made by Faraz for github testing!!
+
         //Testing Boundaries
         assertEquals(Trigs.power(4, 0), Math.pow(4, 0));
+        assertEquals(Trigs.power(-1, 2), Math.pow(-1, 2));
+        assertEquals(Trigs.power(4, -2), Math.pow(4, -2));
 
     }
 }
